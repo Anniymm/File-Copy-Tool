@@ -11,7 +11,7 @@ class FileCopyApp:
     def __init__(self, root):
         self.root = root
         self.root.title("File Copier")
-        self.root.geometry("400x200")
+        self.root.geometry("500x300")
 
         self.label = Label(root, text="Choose files to copy:")
         self.label.pack(pady=10)
