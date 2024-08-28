@@ -11,7 +11,7 @@ class FileCopyApp:
     def __init__(self, root):
         self.root = root
         self.root.title("File Copier")
-        self.root.geometry("600x200")
+        self.root.geometry("400x200")
 
         self.label = Label(root, text="Choose files to copy:")
         self.label.pack(pady=10)
@@ -23,8 +23,7 @@ class FileCopyApp:
         self.progress.pack(pady=10)
 
         self.status_label = Label(root, text="")
-        self.status_label.pack(pady=20)
-
+        self.status_label.pack(pady=10)
         self.file_paths = []
 
     def choose_files(self):
