@@ -1,40 +1,69 @@
 # File Copy Utility
 
-A simple Python script that allows you to select a file and copy it to the current directory.
+A simple Python GUI application for copying files to the current directory. This tool uses `tkinter` to create a user-friendly interface that allows you to select files from your computer and copy them to the directory where the script is running. It also includes a progress bar to display the status of the copying process and logs all activities for troubleshooting purposes.
 
 ## Features
 
-- Choose a file using a file dialog.
-- Automatically determine the current directory.
-- Copy the selected file to the current directory.
+- Select multiple files to copy using a graphical file dialog.
+- Display a progress bar for file copying status.
+- Log file operations, including successful copies and errors.
+- Provide error messages for failed copy attempts.
 
-## requirements
+## Requirements
 
-- Python 3.x installed on your system.
-- Libraries installations.
+- Python 3.10
+- `tkinter` (usually included with Python)
+- `shutil` (Python standard library)
+- `pathlib` (Python standard library)
 
 ## Installation
 
-1. Clone this repository to your local machine.
-2. Navigate to the cloned directory.
+1. **Clone the Repository:**
 
-## Usage
+    ```bash
+    git clone https://github.com/Anniymm/File-Copy-Tool.git
+    cd File-Copy-Tool
+    ```
 
-1. Run the script using Python:
+2. **Run the Script:**
+
+    Make sure you have Python 3.x installed on your system. Run the following command:
+
     ```bash
     python copy_tool_oop.py
     ```
-    ####           ```You can use each of the  commands to run the tool```
-   
-   ```bash
-    python copy_tool.py
-    ```
-   
-3. A file dialog will open. Select the file you want to copy.
-4. The file will be copied to the current directory.
-5. A file dialog will be closed automatically after choosing file.
 
+## Usage
+
+1. Run the script using Python.
+2. Click the **Select Files** button to open a file dialog.
+3. Choose the files you want to copy. You can select multiple files.
+4. The progress bar will show the status of the file copying process.
+5. The status label will indicate the number of files copied and any errors that occur.
+
+## Error Handling
+
+The application handles the following errors:
+- **`shutil.SameFileError`:** If the source and destination files are the same.
+- **`FileNotFoundError`:** If the source file is not found.
+- **`PermissionError`:** If there is no permission to copy the file.
+
+All errors are logged to `file_copy.log` for debugging purposes.
+
+## Logging
+
+All file operations are logged in `file_copy.log`. This file records:
+
+- The date and time of each operation.
+- The severity level (INFO or ERROR).
+- Descriptions of the operations or errors.
+
+## Contributing
+
+Contributions are welcome!
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+
