@@ -52,7 +52,7 @@ class FileCopyApp:
                 self.status_label.config(text=f'Copied {index}/{total_files} files...')
                 self.progress['value'] = index
                 self.root.update_idletasks()  
-            except (shutil.SameFileError, FileNotFoundError, PermissionError) as e:
+            except (shutil.SameFileError, FileNotFoundError, PermissionError) as e: # need to review errors managment 
                 logging.error(f'Error copying {file_path}: {e}')
                 messagebox.showerror('Error', f'Failed to copy {file_path}: {e}')
                 return
