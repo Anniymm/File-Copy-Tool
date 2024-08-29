@@ -8,7 +8,7 @@ A simple Python GUI application for copying files to the current directory. This
 - Display a progress bar for file copying status.
 - Log file operations, including successful copies and errors.
 - Provide error messages for failed copy attempts.
-
+  
 ## Requirements
 
 - Python 3.10
@@ -32,6 +32,10 @@ A simple Python GUI application for copying files to the current directory. This
     ```bash
     python copy_tool_oop.py
     ```
+## Here is a screenshot of the application:
+![copy 1](https://github.com/user-attachments/assets/907f7e2c-1dfd-49e7-9fd8-016ab919c8eb)
+![copy 2](https://github.com/user-attachments/assets/7a6ce323-dc49-40a3-9b49-0a98f090126f)
+![copy 3](https://github.com/user-attachments/assets/494e4436-922b-48af-9871-f859ee6fa029)
 
 ## Usage
 
